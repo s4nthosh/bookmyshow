@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="home">
+    <header>
+      <nav>
+          <ul>
+              <li><a href="#">home</a></li>
+              <li><a href="#">streams</a></li>
+              <li><a href="#">movies</a></li>
+              <li><a href="#">booking-ticket</a></li>
+          </ul>
+      </nav>
+      <div class="searchbar">
+        <input type="search" placeholder="search for movies">
+      </div>
+  </header>
+    <div class="ad-con">
+      <div class="s">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <a href=""><img src="/book-slot/asserts/con1.png"width='100%' height="100%" alt=""></a>
+        </div>
+        <div class="slide">
+          <a href=""><img src="/book-slot/asserts/con2.png"width='100%' height="100%" alt=""></a>
+        </div>
+        <div class="slide">
+          <a href=""><img src="/book-slot/asserts/con3.png"width='100%' height="100%" alt=""></a>
+        </div>
+        <div class="slide">
+          <a href=""><img src="/book-slot/asserts/con4.png"width='100%' height="100%" alt=""></a>
+        </div>
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+    </div>
+            <!--slide images end-->
+        
+        <!--manual navigation start-->
+    <div class="navigation-manual"> 
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+    <!--manual navigation end-->
+  </div>
+    </div>
+  </div>
+    <div class="recommended">
+      <h3>Recommended movies</h3>
+      <div class="movies">
+        <a href="#"><div class="m1">
+          <div class="h">
+          <img src="/book-slot/asserts/movies/m1.png"width='100%' height="100%">
+        </div>
+          <h3>Varisu</h3>
+          <h4>Action/Drama</h4>
+        </div></a>
+        <a href="#"><div class="m1">
+          <div class="h">
+          <img src="/book-slot/asserts/movies/m2.png"width='100%' height="100%">
+        </div>
+          <h3>Thunivu</h3>
+          <h4>Action/Adventure</h4>
+        </div></a>
+        <a href="#"><div class="m1">
+          <div class="h">
+          <img src="/book-slot/asserts/movies/m3.png"width='100%' height="100%">
+        </div>
+          <h3>Pathaan</h3>
+          <h4>Action/Thriller</h4>
+        </div></a>
+        <a href="#"><div class="m1">
+          <div class="h">
+          <img src="/book-slot/asserts/movies/m4.png"width='100%' height="100%">
+        </div>
+          <h3>Avatar</h3>
+          <h4>Action/Adventure</h4>
+        </div></a>
+        <a href="#"><div class="m1">
+          <div class="h">
+          <img src="/book-slot/asserts/movies/m5.png"width='100%' height="100%">
+        </div>
+          <h3>Puss In Boots</h3>
+          <h4>Adventure/Animation</h4>
+        </div></a>
+      </div>
+      <div class="banner">
+      <div class="show-con">
+        <img src="/book-slot/asserts/banner.png"width='100%' height="100%">
+      </div>
+      </div>
+
+      <div class="premier">
+        <h3>Premier movies</h3>
+        <div class="pmovies">
+          <a href="#"><div class="p1">
+            <div class="h">
+            <img src="/book-slot/asserts/premier/p1.png " width='100%' height="100%">
+          </div>
+            <h3>Varisu</h3>
+            <h4>Action/Drama</h4>
+          </div></a>
+          <a href="#"><div class="p1">
+            <div class="h">
+            <img src="/book-slot/asserts/premier/p2.png"width='100%' height="100%">
+          </div>
+            <h3>Thunivu</h3>
+            <h4>Action/Adventure</h4>
+          </div></a>
+          <a href="#"><div class="p1">
+            <div class="h">
+            <img src="/book-slot/asserts/premier/p3.png"width='100%' height="100%">
+          </div>
+            <h3>Pathaan</h3>
+            <h4>Action/Thriller</h4>
+          </div></a>
+          <a href="#"><div class="p1">
+            <div class="h">
+            <img src="/book-slot/asserts/premier/p4.png"width='100%' height="100%">
+          </div>
+            <h3>Avatar</h3>
+            <h4>Action/Adventure</h4>
+          </div></a>
+          <a href="#"><div class="p1">
+            <div class="h">
+            <img src="/book-slot/asserts/premier/p5.png"width='100%' height="100%">
+          </div>
+            <h3>Puss In Boots</h3>
+            <h4>Adventure/Animation</h4>
+          </div></a>
+        </div>
+    </div>
+  </div>
+  
+
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+</body>
+</html>
